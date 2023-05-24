@@ -2,8 +2,10 @@
   "name": "doughtnut_api",
   "description": "A most delicious api",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "DEBUG=express:* node app.js"
   },
   "keywords": [],
   "author": "antoni-devlin",
