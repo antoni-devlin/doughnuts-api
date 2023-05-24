@@ -1,8 +1,9 @@
 import express from "express";
+import { doughnuts } from "./doughnutData.js";
 const app = express();
 
 app.get("/", (req, res) => {
-  return res.send("Root");
+  return res.send(doughnuts);
 });
 
 // app.post("/", (req, res) => {
