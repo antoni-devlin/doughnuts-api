@@ -19,4 +19,15 @@ app.get("/doughnuts/random", (req, res) => {
   return res.send(data);
 });
 
+app.get("/doughnuts/single", (req, res) => {
+  // Iterate through the object
+  for (const key in doughnuts) {
+    if (doughnuts.hasOwnProperty(key)) {
+      console.log(`${key}: ${doughnuts[key]}`);
+    }
+  }
+
+  return res.send(data);
+});
+
 app.listen(3000, () => console.log(`Example app listening on port port!`));
