@@ -15,8 +15,8 @@ app.get("/doughnuts/list", (req, res) => {
 });
 
 app.get("/doughnuts/random", (req, res) => {
-  const data = doughnuts[getRandomInt(Object.keys(doughnuts).length)];
-  return res.send(data);
+  const randomDoughtnut = doughnuts[getRandomInt(doughnuts.length)];
+  return res.send(randomDoughtnut);
 });
 
 app.get("/doughnuts/single", (req, res) => {
