@@ -1,5 +1,5 @@
-export const doughnuts = {
-  0: {
+export const doughnuts = [
+  {
     name: "Speculoos Sensation",
     description:
       "Caramel Filled, Caramel Icing, Speculoos Crumb & Biscuit, Chocolate & Vanilla Drizzle",
@@ -8,7 +8,7 @@ export const doughnuts = {
     allergens: ["Nuts", "Egg", "Milk", "Soya", "Wheat", "Sulphites"],
     kcal: 421,
   },
-  1: {
+  {
     name: "Strawberry Rainbow",
     description: "Strawberry Icing and Rainbow Sprinkles",
     manufacturer: "Dunkin'",
@@ -16,7 +16,7 @@ export const doughnuts = {
     allergens: ["Nuts", "Egg", "Milk", "Soya", "Wheat"],
     kcal: 275,
   },
-  2: {
+  {
     name: "Rainbow Fruits",
     description:
       "Strawberry Filled, Vanilla Icing & Chewy Fruity Rainbow Candies",
@@ -25,7 +25,7 @@ export const doughnuts = {
     allergens: ["Nuts", "Egg", "Milk", "Soya", "Wheat"],
     kcal: 358,
   },
-  3: {
+  {
     name: "Cookie Crème Blast",
     description:
       "Bavarian Crème Filled, Blue Vanilla Icing, Cookie Crumb & Biscuit, Chocolate & Vanilla Drizzle",
@@ -34,7 +34,7 @@ export const doughnuts = {
     allergens: ["Nuts", "Egg", "Milk", "Soya", "Wheat"],
     kcal: 398,
   },
-  4: {
+  {
     name: "Chocolate Monster",
     description: "Chocolate Icing & Sprinkles",
     manufacturer: "Dunkin'",
@@ -42,7 +42,7 @@ export const doughnuts = {
     allergens: ["Nuts", "Egg", "Milk", "Soya", "Wheat"],
     kcal: 299,
   },
-  5: {
+  {
     name: "Chocolate Fudge Cake",
     description: "Chocolate Cake & Icing, Caramel Fudge Cubes & Drizzle",
     manufacturer: "Dunkin'",
@@ -50,7 +50,7 @@ export const doughnuts = {
     allergens: ["Nuts", "Egg", "Milk", "Soya", "Wheat", "Sulphites"],
     kcal: 361,
   },
-  6: {
+  {
     name: "Boston Crème",
     description: "Bavarian Crème Filled & Chocolate Icing",
     manufacturer: "Dunkin'",
@@ -58,7 +58,7 @@ export const doughnuts = {
     allergens: ["Nuts", "Egg", "Milk", "Soya", "Wheat"],
     kcal: 320,
   },
-  7: {
+  {
     name: "Mr Happy",
     description: "Bavarian Crème Filled, Vanilla Icing & Chocolate Smile",
     manufacturer: "Dunkin'",
@@ -66,7 +66,7 @@ export const doughnuts = {
     allergens: ["Nuts", "Egg", "Milk", "Soya", "Wheat"],
     kcal: 339,
   },
-  8: {
+  {
     name: "Rocky Road",
     description:
       "Hazelnut Filling, Chocolate Icing & Drizzle, Marshmallows, Caramel Fudge Cubes & Biscuit Crumble",
@@ -75,7 +75,7 @@ export const doughnuts = {
     allergens: ["Nuts", "Egg", "Milk", "Soya", "Wheat"],
     kcal: 409,
   },
-  9: {
+  {
     name: "Original Glazed",
     description: "The Classic Glazed Donut",
     manufacturer: "Dunkin'",
@@ -83,4 +83,4 @@ export const doughnuts = {
     allergens: ["Nuts", "Egg", "Milk", "Soya", "Wheat"],
     kcal: 266,
   },
-};
+];
