@@ -19,15 +19,11 @@ app.get("/doughnuts/random", (req, res) => {
   return res.send(randomDoughtnut);
 });
 
-app.get("/doughnuts/single", (req, res) => {
-  // Iterate through the object
-  for (const key in doughnuts) {
-    if (doughnuts.hasOwnProperty(key)) {
-      console.log(`${key}: ${doughnuts[key]}`);
-    }
-  }
-
-  return res.send(data);
+app.get("/doughnuts/search/:searchTerm", (req, res) => {
+  var results = doughnuts.filter(function (el) {
+    return el.name.includes(req.params.searchTerm);
+  });
+  return res.send(results);
 });
 
 app.listen(3000, () => console.log(`Example app listening on port port!`));
