@@ -1,6 +1,38 @@
 import express from "express";
-import { doughnuts } from "./doughnutData.js";
 const app = express();
+
+import { sequelize } from "./db.js";
+import { Doughnut } from "./data/Doughnut.js";
+
+// Even tho our model is an ES6 compatible class
+// we should not use new to create an instance
+// instead we should call the build method
+async function main() {
+  // The following line will sync our models
+  // To the database creating them or altering the db
+  // To match the new model
+  await sequelize.sync({ alter: true });
+
+  const newDoughnut = Doughnut.build({
+    name: "Test doughnut",
+    manufacturer: "Dunkin",
+  });
+  console.log(newDoughnut instanceof Doughnut); // true
+  console.log(newDoughnut.title); // "Jane"
+
+  // Our newly build instance haven't been saved
+  // to the db yet, we need to call .save()
+  await newDoughnut.save();
+}
+
+main();
+
+// try {
+//   await sequelize.authenticate();
+//   console.log("Connection has been established successfully.");
+// } catch (error) {
+//   console.error("Unable to connect to the database:", error);
+// }
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
